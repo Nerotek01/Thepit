@@ -48,7 +48,6 @@ Built from the ground up with a MongoDB + Redis storage backend, an event-driven
 - [Database & Storage](#database--storage)
 - [Diagnostics](#diagnostics)
 - [Public API](#public-api)
-- [Building from Source](#building-from-source)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Support & Purchasing](#support--purchasing)
 
@@ -641,36 +640,6 @@ The plugin fires detailed custom events for external plugins to listen to:
 
 ---
 
-## Building from Source
-
-The plugin uses Gradle. From the repository root:
-
-```bash
-./gradlew clean build
-```
-
-The build compiles the plugin, runs the automated JUnit 5 test suite, and produces the shaded JAR at `build/libs/ThePit-1.6.0.jar`. Requires Java 21 and an internet connection.
-
-### Automated Tests
-
-The repository ships with a JUnit 5 test suite covering pure-logic components (prestige progression tables, renown reward tiers, roman numeral formatting, and lobby border clamp mathematics). Run with:
-
-```bash
-./gradlew test
-```
-
-A combined JUnit XML report for each release is committed under `test-reports/`. A release is only published when every test passes.
-
-### Gradle Configuration
-
-- **Java 21 toolchain** – source and target compatibility set to Java 21.
-- **Shadow plugin** (8.3.6) – bundles MongoDB and Jedis with package relocation.
-- **Dependency relocation** – `org.mongodb` → `com.nerotek01.thepit.libs.mongodb`, `redis.clients` → `com.nerotek01.thepit.libs.redis`.
-- **Minimisation** – unused shaded classes are stripped to reduce JAR size.
-- **CraftBukkit NMS** – resolved from the public CodeMC NDS Maven mirror (`https://repo.codemc.io/repository/nms/`), no locally built JAR required.
-
----
-
 ## Frequently Asked Questions
 
 ### Pre-purchase Questions
@@ -724,6 +693,7 @@ A: All updates for the current major version are included with your permanent li
 ### How to Purchase
 - **Discord:** `Nerotek01`
 - **Bale (Iranian users):** `Nerotek`
+- **Price:** **€25.00** — one-time payment, permanent license.
 
 ### License
 **Permanent, all-servers license.** Your purchase covers every server you own — from a single arena to a 50-server BungeeCord network. There are no recurring fees, no per-server add-ons, and no hidden costs.
