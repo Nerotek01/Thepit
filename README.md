@@ -93,12 +93,6 @@ One payment grants you a permanent license that covers **all servers you own** â
 
 When your server has an issue at peak time, you do not file a ticket and wait. You speak directly to the person who wrote the code. Support is available **24/7** through Discord or Bale, and every report is treated with the urgency that a live production network demands.
 
-### Setup That Respects Your Time
-
-The dedicated setup mode loads only the configuration commands. Administrators prepare the arena step by step using an interactive GUI walkthrough (`/thepit setup-gui`) â€” set the map, spawn, lobby, pit hole, NPCs, event regions, and more. When setup is complete, flip one boolean and the full plugin loads. Your server is ready for players.
-
----
-
 ## Competitive Comparison
 
 | Criteria | **ThePit** | Hypixel Pit (reference) | Generic PvP Plugins | Other "Premium" Pit |
@@ -457,61 +451,6 @@ When enabled, multiple arena servers share player progression in real time.
 ## Commands & Permissions
 
 Main command: `/thepit`
-
-### Setup Commands (available when SetupMode is true)
-| Command | Purpose |
-|---------|---------|
-| `/thepit setmap` | Teleport to set up the arena map |
-| `/thepit setspawn` | Set the main spawn point |
-| `/thepit setlobby` | Set the lobby spawn point |
-| `/thepit setspawn-region` | Set the spawn region |
-| `/thepit setpithole` | Set the pit hole |
-| `/thepit setunlocked-features-hologram` | Set the unlocked features hologram |
-| `/thepit setnpc` | Set NPC positions |
-| `/thepit setrandomgold` | Set random gold spawn positions |
-| `/thepit setenderchest` | Set enderchest positions |
-| `/thepit setevent` | Set event regions and holograms |
-| `/thepit setspawn-pos <N>` | Set a custom respawn position |
-| `/thepit removespawn-pos <N>` | Remove a custom respawn position |
-| `/thepit setup-progress` | View setup completion progress |
-| `/thepit setup-gui` | Guided GUI walkthrough |
-| `/thepit disable-setup` | Flip to full plugin mode |
-
-### Normal Commands (available when SetupMode is false)
-| Command | Purpose | Permission |
-|---------|---------|------------|
-| `/thepit level <set/add/take> <player> <amount>` | Edit player level | `thepit.economy` |
-| `/thepit prestige <set/add/take> <player> <amount>` | Edit player prestige | `thepit.economy` |
-| `/thepit gold <set/add/take> <player> <amount>` | Edit player gold | `thepit.economy` |
-| `/thepit renown <set/add/take> <player> <amount>` | Edit player renown | `thepit.economy` |
-| `/thepit bounty <set/add/take> <player> <amount>` | Edit player bounty | `thepit.economy` |
-| `/thepit build` | Toggle build mode | `thepit.build` |
-| `/thepit reset <player>` | Reset a player's account | `thepit.reset` |
-| `/thepit enable-setup` | Re-enable setup mode | `thepit.setup` |
-
-### Standalone Player Commands
-| Command | Purpose |
-|---------|---------|
-| `/pchat` (`/pitchat`) | Open chat options GUI |
-| `/trade <player>` | Send a trade request |
-| `/view <player>` | View another player's stats |
-| `/stats` | View your own stats |
-| `/upgrades` | Open permanent upgrades GUI |
-| `/contracts` | Open contracts GUI |
-| `/gold` | Show current gold balance |
-| `/spawn` (`/respawn`) | Return to arena spawn |
-
-### Permissions
-| Permission | Grants |
-|-----------|--------|
-| `thepit.*` | All admin permissions |
-| `thepit.admin` | Setup and economy commands |
-| `thepit.build` | Build mode in the arena |
-| `thepit.economy` | Economy commands (gold, level, prestige, renown, bounty) |
-| `thepit.reset` | Account reset command |
-| `thepit.setup` | Setup commands |
-
----
 
 ## Full Configuration
 
